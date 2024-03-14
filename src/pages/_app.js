@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }) {
             ) : (
               <>
               {/*  <Body /> */}
-               {/* <Component {...pageProps} /> */}
+              <Component {...pageProps} /> 
               </>
             )}
           </div>
