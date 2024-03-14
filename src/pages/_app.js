@@ -36,8 +36,9 @@ export default function App({ Component, pageProps }) {
             ) : (
               <>
               {/*  <Body /> */}
-               <landing /> 
-              <Component {...pageProps} /> 
+               {/* <landing /> */}
+             {/*  <Component {...pageProps} /> */}
+              {isRootRoute ? <LandingPage /> : <Component {...pageProps} />}
               </>
               
             )}
