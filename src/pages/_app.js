@@ -38,6 +38,7 @@ export default function App({ Component, pageProps }) {
                <landing /> 
               <Component {...pageProps} /> 
               </>
+               <landing /> 
             )}
           </div>
         </NotificationProvider>
