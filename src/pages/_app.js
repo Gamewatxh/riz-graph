@@ -1,13 +1,13 @@
 import "@/styles/globals.css";
 import NavBar from "../Components/NavBar";
 import Body from "@/pages/Body";
-import landing from "@/pages/landing";
 import { MoralisProvider } from "react-moralis";
 import { NotificationProvider } from "@web3uikit/core";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import { useRouter } from 'next/router';
 import Dashboard from "./Dashboard";
 import Marketplace from "./Marketplace";
+import LandingPage from './landing'
 
 
 const client = new ApolloClient({
@@ -20,6 +20,7 @@ export default function App({ Component, pageProps }) {
   const isMarketplaceRoute = router.pathname === '/Marketplace';
   const isDashboardRoute = router.pathname === '/Dashboard';
   const isBodyRoute = router.pathname === '/Body';
+  const islandingRoute = router.pathname === '/landing';
   return (
     <MoralisProvider initializeOnMount={false}>
       <ApolloProvider client={client}>
