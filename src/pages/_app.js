@@ -33,8 +33,8 @@ export default function App({ Component, pageProps }) {
               <Marketplace />
             ) : (
               <>
-                <Body />
-                <Component {...pageProps} />
+              {/*  <Body /> */}
+               {/* <Component {...pageProps} /> */}
               </>
             )}
           </div>
