@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import NavBar from "../Components/NavBar";
 import Body from "@/pages/Body";
-import Body from "@/pages/landing";
+import landing from "@/pages/landing";
 import { MoralisProvider } from "react-moralis";
 import { NotificationProvider } from "@web3uikit/core";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
