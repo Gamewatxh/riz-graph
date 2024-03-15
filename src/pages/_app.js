@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import Dashboard from "./Dashboard";
 import Marketplace from "./Marketplace";
 import LandingPage from './landing' ;
-import Jobfair-reg from './Jobfair-reg' ;
+import Jobfairreg from './Jobfairreg' ;
 
 
 const client = new ApolloClient({
@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
   const isDashboardRoute = router.pathname === '/Dashboard';
   const isBodyRoute = router.pathname === '/Body';
   const islandingRoute = router.pathname === '/landing';
-  const isJobfairregRoute = router.pathname === '/Jobfair-reg';
+  const isJobfairregRoute = router.pathname === '/Jobfairreg';
   return (
     <MoralisProvider initializeOnMount={false}>
       <ApolloProvider client={client}>
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }) {
             ) : islandingRoute ?  (
               <LandingPage />
             ): isisJobfairregRoute ?  (
-              <Jobfair-reg />
+              <Jobfairreg />
             ): isMarketplaceRoute ? (
               <Marketplace />
             ) : (
