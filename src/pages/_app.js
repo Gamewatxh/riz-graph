@@ -7,7 +7,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import { useRouter } from 'next/router';
 import Dashboard from "./Dashboard";
 import Marketplace from "./Marketplace";
-import LandingPage from './landing' ;
+import LandingPage from './landing' ; 
 import Jobfairreg from './Jobfairreg' ;
 
 
