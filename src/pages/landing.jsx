@@ -7,7 +7,7 @@ const LandingPage = () => {
       <h1>Welcome to Chain</h1>
       <p className="hero-description">Empowering Your Career Journey</p>
       <div className="cta-buttons">
-        <Link href="/jobfair">
+        <Link href="/jobfair-reg">
           <a className="cta-button primary">Register in Job Fair</a>
         </Link>
         <Link href="/Body">
