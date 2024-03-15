@@ -23,23 +23,40 @@ export default function NavBar() {
     return (
         <nav className="nav--bar">
             <h1>
-                Top Talent Chain
+                Pro-Block
             </h1>
             <div className="right--side">
-                <label onClick={handleClickHome}>
+                <label onClick={handleClickHome} className="nav-item">
                     Home
                 </label>
-                <label onClick={handleClickMarketplace}>
+                <label onClick={handleClickMarketplace} className="nav-item">
                     Marketplace
                 </label>
-                <label onClick={handleClickRegisterInChain}>
+                <label onClick={handleClickRegisterInChain} className="nav-item">
                     Register in Chain
                 </label>
-                <label onClick={handleClickBlog}>
+                <label onClick={handleClickBlog} className="nav-item">
                     Blog
                 </label>
                 <ConnectButton chainId={11155111} />
             </div>
+            <style jsx>{`
+                .nav--bar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+                }
+                .right--side {
+                    display: flex;
+                    align-items: center;
+                }
+                .nav-item {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                }
+            `}</style>
         </nav>
     );
 }
