@@ -37,9 +37,7 @@ export default function App({ Component, pageProps }) {
               <Marketplace />
             ) : (
               <>
-              {/*  <Body /> */}
-               {/* <landing /> */}
-             {/*  <Component {...pageProps} /> */}
+
                <LandingPage />
                <Component {...pageProps} />
               </>
