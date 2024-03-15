@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }) {
               <Body />
             ) : islandingRoute ?  (
               <LandingPage />
-            ): isisJobfairregRoute ?  (
+            ): isJobfairregRoute ?  (
               <Jobfairreg />
             ): isMarketplaceRoute ? (
               <Marketplace />
