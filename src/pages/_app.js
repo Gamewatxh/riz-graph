@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import Dashboard from "./Dashboard";
 import Marketplace from "./Marketplace";
 import LandingPage from './landing' ; 
+import Jobfairenrole from './Jobfairenrole' ;
 
 
 
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }) {
   const isDashboardRoute = router.pathname === '/Dashboard';
   const isBodyRoute = router.pathname === '/Body';
   const islandingRoute = router.pathname === '/landing';
+  const isJobfairenroleRoute = router.pathname === '/Jobfairenrole';
   
   return (
     <MoralisProvider initializeOnMount={false}>
@@ -35,6 +37,8 @@ export default function App({ Component, pageProps }) {
               <Body />
             ) : islandingRoute ?  (
               <LandingPage />
+            ): isJobfairenroleRoute ?  (
+              <Jobfairenrole />
             ): isMarketplaceRoute ? (
               <Marketplace />
             ) : (
