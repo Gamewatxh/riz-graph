@@ -31,14 +31,17 @@ export default function App({ Component, pageProps }) {
               <Dashboard />
             ) : isBodyRoute ? (
               <Body />
-            ) : isMarketplaceRoute ? (
+            ) : islandingRoute ?  (
+              <LandingPage />
+            ): isMarketplaceRoute ? (
               <Marketplace />
             ) : (
               <>
               {/*  <Body /> */}
                {/* <landing /> */}
              {/*  <Component {...pageProps} /> */}
-              {islandingRoute ? <LandingPage /> : <Component {...pageProps} />}
+               <LandingPage />
+               <Component {...pageProps} />
               </>
               
             )}
