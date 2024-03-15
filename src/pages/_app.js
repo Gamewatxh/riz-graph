@@ -7,7 +7,8 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import { useRouter } from 'next/router';
 import Dashboard from "./Dashboard";
 import Marketplace from "./Marketplace";
-import LandingPage from './landing'
+import LandingPage from './landing' ;
+import LandingPage from './Jobfair-reg' ;
 
 
 const client = new ApolloClient({
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }) {
   const isDashboardRoute = router.pathname === '/Dashboard';
   const isBodyRoute = router.pathname === '/Body';
   const islandingRoute = router.pathname === '/landing';
+  const isJobfairregRoute = router.pathname === '/Jobfair-reg';
   return (
     <MoralisProvider initializeOnMount={false}>
       <ApolloProvider client={client}>
@@ -33,6 +35,8 @@ export default function App({ Component, pageProps }) {
               <Body />
             ) : islandingRoute ?  (
               <LandingPage />
+            ): isisJobfairregRoute ?  (
+              <Jobfair-reg />
             ): isMarketplaceRoute ? (
               <Marketplace />
             ) : (
