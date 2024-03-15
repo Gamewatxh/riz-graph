@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 import Dashboard from "./Dashboard";
 import Marketplace from "./Marketplace";
 import LandingPage from './landing' ;
-import LandingPage from './Jobfair-reg' ;
+import Jobfair-reg from './Jobfair-reg' ;
 
 
 const client = new ApolloClient({
