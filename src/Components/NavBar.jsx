@@ -5,7 +5,7 @@ export default function NavBar() {
     const router = useRouter();
 
     const handleClickHome = () => {
-        router.push('/LandingPage');
+        router.push('/landing');
     };
 
     const handleClickMarketplace = () => {
@@ -23,7 +23,7 @@ export default function NavBar() {
     return (
         <nav className="nav--bar">
             <h1>
-                Pro-Block
+                Top Talent Chain
             </h1>
             <div className="right--side">
                 <label onClick={handleClickHome} className="nav-item">
