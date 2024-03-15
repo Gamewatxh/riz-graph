@@ -10,7 +10,7 @@ const LandingPage = () => {
         <Link href="/jobfair">
           <a className="cta-button primary">Register in Job Fair</a>
         </Link>
-        <Link href="/register">
+        <Link href="/Body">
           <a className="cta-button secondary">Register in Chain</a>
         </Link>
       </div>
