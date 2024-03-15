@@ -5,7 +5,7 @@ export default function NavBar() {
     const router = useRouter();
 
     const handleClickHome = () => {
-        router.push('/landing');
+        router.push('/');
     };
 
     const handleClickMarketplace = () => {
